@@ -70,10 +70,10 @@
                 </th:block>
             </nav>
             <ul class="mobileBar">
-                <li><a href="#">팀원찾기</a></li>
-                <li><a href="#">프로젝트/스터디</a></li>
-                <li><a href="#">블로그</a></li>
-                <li><a href="#">라운지</a></li>
+                <li><a href="/main/userList">팀원찾기</a></li>
+                <li><a href="/project/projectList">프로젝트/스터디</a></li>
+                <li><a th:href="@{/story/storyList(userNum=${session.userNum})}">블로그</a></li>
+                <li><a href="/lounge">라운지</a></li>
             </ul>
         </div>
 
